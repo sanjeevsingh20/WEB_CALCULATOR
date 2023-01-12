@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="apan">APUN KA CALCULATOR</h1>
+    <div class="d-flex">
+        <div class="hist">
+            <span class="rgt">
+                <button onclick="history()" class="header" style="width:100%;">Click Me to see Your Calculation History</button>
+                <div class="history-panel">
+                    <div id="histories"></div>
+                    <div class="cl">
+                        <button onclick="cles()" class=" red small white-text top-margin">Clear</button>
+                    </div>
+                </div>
+                
+            </span>
+        </div>
+        <div class="container">
+            <div class="header">Calculator</div>
+            <form action="" name="myform">
+                <input type="text" class="result" id="screen">
+            </form>
+            <div class="first-row">
+                <input type="button" name="" value="AC" class="global" onclick="clr()">
+                <input type="button" name="" value="(" class="global" onclick="display('&#40;')">
+                <input type="button" name="" value=")" class="global" onclick="display('&#41;')">
+                <input type="button" name="" value="%" class="global" onclick="display('%')">
+            </div>
+            <div class="second-row">
+                <input type="button" name="" value="7" class="global" onclick="display('7')">
+                <input type="button" name="" value="8" class="global" onclick="display('8')">
+                <input type="button" name="" value="9" class="global" onclick="display('9')">
+                <input type="button" name="" value="/" class="global" onclick="display('/')">
+            </div>
+            <div class="third-row">
+                <input type="button" name="" value="4" class="global" onclick="display('4')">
+                <input type="button" name="" value="5" class="global" onclick="display('5')">
+                <input type="button" name="" value="6" class="global" onclick="display('6')">
+                <input type="button" name="" value="x" class="global" onclick="display('*')">
+            </div>
+            <div class="fourth-row">
+                <input type="button" name="" value="1" class="global" onclick="display('1')">
+                <input type="button" name="" value="2" class="global" onclick="display('2')">
+                <input type="button" name="" value="3" class="global" onclick="display('3')">
+                <input type="button" name="" value="-" class="global" onclick="display('-')">
+            </div>
+            <div class="conflict">
+                <div class="left">
+                    <input type="button" name="" value="0" class=" big" onclick="display('0')">
+                    <input type="button" name="" value="." class=" small" onclick="display('.')">
+                    <input type="button" name="" value="Del" class=" red small white-text top-margin"
+                        onclick="delete_it()">
+                    <input type="button" id="equal" name="" value="=" onclick="calculate()"
+                        class=" green white-text big top-margin">
+                </div>
+                <div class="right">
+                    <input type="button" name="" value="+" class="global grey plus" onclick="display('+')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
